@@ -14,7 +14,7 @@ class App extends Component {
     };
 
     buttonClickHandler() {
-   
+   		this.setState({ renderBall: true })
    }
     renderBallOrButton() {
 		if (this.state.renderBall) {
