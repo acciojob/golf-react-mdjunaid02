@@ -26,7 +26,12 @@ class App extends Component {
 
     // bind ArrowRight keydown event
     componentDidMount() {
-      
+        
+        document.addEventListener("keydown", (e) => {
+            if (e.keyCode === 39) {
+                this.setState({ ballPosition: { left: this.state.posi+5+ "px"}, posi: this.state.posi + 5 })
+            }
+        })
     }
 
     render() {
